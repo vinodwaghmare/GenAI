@@ -1,0 +1,10 @@
+Iterative Prompt Development
+==============================
+
+idea --> Implementation(data/code) Prompt --> Experimental Result --> Error Analysis
+
+Iterative Process
+Try Something
+Analyze where the results doesn't give what you want
+Clarify instructions give more time to think
+Refine prompts with a batch of examples
