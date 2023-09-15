@@ -1,0 +1,7 @@
+Inferring
+=============
+
+Infer for the given text in the sentiments, types of emotions, infer topics
+eg : product review
+we can see  users positive/negative feedback
+Attitude towards the product,delivery,packinging etc
