@@ -1,0 +1,8 @@
+Summary
+===============
+
+Summarize text by focusing on specific topics
+Summarize with word/sentence limit
+
+eg : We have product review and now we need to summarize in such way to let shipping department know how
+the delivery happen, limit words, no product explanation etc.
