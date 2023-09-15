@@ -1,0 +1,37 @@
+Expanding
+==========
+
+Temperature parameter in LLM model is to degree of exploration or kind of randomness of the model
+
+eg : 
+My favourite food is
+
+pizza 53%
+sushi 30%
+taco 5%
+
+temperature = 0 
+My favourite food is pizza
+My favourite food is pizza
+My favourite food is pizza
+
+temperature = 0.3
+My favourite food is pizza
+My favourite food is sushi
+My favourite food is pizza
+
+temperature = 0.7
+My favourite food is taco
+My favourite food is sushi 
+My favourite food is pizza
+
+High order temperature it will chose less like options
+
+Generall use case or applications use temp = 0
+for tasks that requires reliability, predictabilty
+use case maths, diagnostics
+
+for tasks that requires variety
+temp = 0.3 or temp = 0.7 
+use case : generate emails, response in chatbot 
+
