@@ -1,0 +1,13 @@
+Chatbot
+
+There are 3 roles
+system
+assistant
+user
+
+1) System : Sets behaviour of the assistant & persona of the assitant & provide high level instruction for
+the conversation, guiding assitance responses
+
+2) Assistant :  Chatbot model
+
+3) User : Role to interact with chatbot
