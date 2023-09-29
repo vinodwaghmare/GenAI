@@ -1,0 +1,17 @@
+Chain is important component in langchain 
+The chain usually combines the building block together with prompt & other building blocks to carry out sequence of operations
+
+There are 2 sequential chains :
+
+1) Simple Sequential chain
+It's contains chains with single i/p & single o/p
+one chain of o/p is i/p to other chain
+
+2) Sequential chain 
+It contains  chains with muliple input & multiple o/p's
+
+3) Router chain
+
+
+
+
