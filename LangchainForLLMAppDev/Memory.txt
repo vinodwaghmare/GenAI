@@ -1,0 +1,31 @@
+Large Language Models are 'stateless'
+- Each transaction is independent
+Chatbots appear to have memory by providing the full conversation as 'context'
+
+Langchain offers muliple options for managing these memories 
+
+Eg: Using LLM as chat interface 
+
+Langchain stores the conversation using ConversationBufferMemory
+
+Memory in langchain stores the conversation which are tokens but to send all the previous conversation tokens + current converstatiopn
+costs if we send to LLM
+So Langchain provides more convenient kinds of memory to store & accumalate the conversation 
+
+0) ConversationBufferMemory 
+This memory allows for storing messages & then extract the messages in variables
+
+1) ConversationBufferWindow
+It only keeps a window of memory 
+if set it's variable k = 1 then only 1 latest conversation
+or k = n then n latest conversation 
+
+2) ConversationTokenBufferMemory
+It only keeps the limited number of tokens of recent interaction & this maps directly to cost of LLM calls
+
+3) ConversationSummaryMemory 
+This memory creates a summary of the conversation over time
+It's useful as we know more tokens send to llm model means more cost 
+It flush out previous conversation if token > token_limit then conversation summary 
+else token < token_limit then conversation summary + limited no. of latest conversations tokens
+
