@@ -1,0 +1,37 @@
+
+Complex application that people are building are the LLM Models which can answer the questions on the
+top of the document
+
+Beacuse these models are not trained on propreitory data 
+
+We can use more key components of langchain like
+ Embedding models & vector stores 
+
+Vector databases indexes stores the vector embeddings for fast retrieval & similarity search
+indexes are mapped over each embedding vector
+
+Unstructured data --> Models --> Vector Embeddings
+Index : data structure often including distance search 
+
+Use case for Vector database
+1) To store long term memory for LLMs
+2) Semantic search 
+3) Similarity search
+4) Recommendation engine
+
+
+
+LLM's on Document
+-----------------
+
+LLMs can only inspect few thousand documents at a time 
+
+Emdeddings 
+---------------
+Embedding vector captures content / meaning
+Text with similiar content will have similiar vectors
+
+
+First we break down document into chunks then for each chunk embedding is created & stored in vector database
+
+When query comes in first we create embeddings for it then we compare it with all vector in vector database & pick the similiar 
