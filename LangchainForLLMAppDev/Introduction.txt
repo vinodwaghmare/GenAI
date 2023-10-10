@@ -1,0 +1,41 @@
+Overview 
+
+Open source framework for LLMs applications
+Python and Javascript types packages
+Focused on composition & modularity
+
+Key value adds :
+1. Modular Components
+2. Use Cases: Common ways to combine components
+
+Components 
+
+1) Models :
+LLMs : 20+ Integrations
+Chat Models
+Text Embedding Models: 10+ Integrations
+
+2) Prompts
+Prompt Templates
+Output Parsers : 5+ implementations
+  Retry/Fixing logic
+Example Selectors : 5+ implementations
+
+3) Indexes 
+Document Loaders : 50+ implementations
+Text Splitters : 10+ implementations
+Vector Stores : 10+ Integrations
+Retrievers : 5+ integrations/implementations 
+
+4) Chains
+Prompt + LLM + Output Parsing
+Can be used as a building block for longer chain
+More applications specific chains : 20+ types
+
+5) Agents 
+Agent Types : 5+ types
+  Algorithm for getting LLM use tools
+Agent toolkits  : 10+ implementations
+   agent armed for specific tool for specfic application
+
+
