@@ -1,0 +1,29 @@
+LLM models :
+GPT
+Palm
+Bloom
+LLaMa
+Bert
+FLAN-T5
+
+When given a prompt contains question models generates answer,the output of the model is called completion
+Act of using the model to generate text is called inference
+context window is a space or memory for prompt
+
+Building a LLM model using transformers
+- The power of transformer architecture lies in the ability to learn relevant & context of all the words in the sentence
+- where each word in sentence maps with each other words 
+- TO apply attention weights to those words in sentence so that model learns relevance of words with each other 
+- Those attention weights are learned during LLM trainings 
+
+Transformers contains 2 distinct part
+1) encoder
+2) decoder 
+
+Both these work in conjunction &  share similarities
+
+Now to give input as text but ML models requires nos not words
+convert text to tokens (each no. represent the postiion in the dcitionary of all possible words)
+Now this input token is passed to embedding layer which converts tokens into vector which occupies location in space
+Vector learns to encode the meaning & context of the input sequence
+Word2Vec use this concept
