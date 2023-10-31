@@ -22,8 +22,23 @@ Transformers contains 2 distinct part
 
 Both these work in conjunction &  share similarities
 
-Now to give input as text but ML models requires nos not words
-convert text to tokens (each no. represent the postiion in the dcitionary of all possible words)
-Now this input token is passed to embedding layer which converts tokens into vector which occupies location in space
-Vector learns to encode the meaning & context of the input sequence
-Word2Vec use this concept
+- Now to give input as text but ML models requires nos not words
+- convert text to tokens (each no. represent the position in the dcitionary of all possible words)
+- Now this input token is passed to embedding layer which converts tokens into vector which occupies location in space
+- Vector learns to encode the meaning & context of the input sequence
+- Word2Vec use this concept
+- each token is a matched to multi-dim vector
+
+- Model process each of the tokens in parallel
+- Model Add token embeddings  + postional embeddings to keep relevance of position in the text in sentence
+- Resulting vector of above embeedings will be pass to the self attention layer
+- As attention weights in model are multi-headed attention layers
+1 head --> find relation between people & entities
+2 head --> Activity of the sentence
+3 head --> rhymes in the sentence
+- final heads attention layer output will be given to feed forward network
+- o/p will be vector of logits proportional to the prob score of each and every token in dict
+- Pass vector of logits to softmax layer where they are normalise to the probability score of each word in vocab
+
+
+
